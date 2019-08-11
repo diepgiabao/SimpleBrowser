@@ -3,6 +3,8 @@
 We would like you to build a very simple browser. Not a fully fledged one like Firefox, but instead a minimal application that can only use very simple ​​searches​​ ​and ​​search suggestions​​ ​as a browsing starting point.
 The following three screens show the complete flow of the application
 
+![App flow](https://github.com/JozefLipovsky/SimpleBrowser/blob/master/Screen%20Shot%202019-08-10%20at%207.53.20%20PM.png)
+
 ### A) ​ Empty State
 When the application is started it will show just a search field at the top of the screen with a
 placeholder text that says “Search”.
