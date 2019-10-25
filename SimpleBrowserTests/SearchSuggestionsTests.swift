@@ -12,7 +12,7 @@ import XCTest
 class SearchSuggestionsTests: XCTestCase {
     
     func testInitialization_shouldReturnValidObject() {
-        let data = Data(validJSON.utf8)
+        let data = Data()
         do {
             let searchSuggestion = try JSONDecoder().decode(SearchSuggestions.self, from: data)
             XCTAssertNotNil(searchSuggestion)
