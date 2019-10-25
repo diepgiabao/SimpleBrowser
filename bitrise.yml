@@ -40,6 +40,7 @@ workflows:
     - xcode-test@2.3.2:
         inputs:
         - project_path: "$BITRISE_PROJECT_PATH"
+        - simulator_device: iPhone 11 Pro Max
         - scheme: "$BITRISE_SCHEME"
     - deploy-to-bitrise-io@1.7.1: {}
     - cache-push@2.2.0: {}
@@ -54,3 +55,6 @@ app:
   - opts:
       is_expand: false
     BITRISE_EXPORT_METHOD: development
+meta:
+  bitrise.io:
+    machine_type: performance
