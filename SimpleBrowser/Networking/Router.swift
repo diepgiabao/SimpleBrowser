@@ -38,7 +38,7 @@ enum Router {
     var host: String {
         switch self {
         case .searchResults(_):
-            return "bing.com"
+            return "onbibi.com"
             
         case .searchSuggestions(_):
             return "api.bing.com"
