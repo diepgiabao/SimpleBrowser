@@ -12,7 +12,7 @@ import XCTest
 class RouterTests: XCTestCase {
 
     func testURL_shouldReturnCorrectURLForEachCase() {
-        let expectedSearchResultsRouterURL = URL(string: "https://bing.com/search?q=abc%20def")
+        let expectedSearchResultsRouterURL = URL(string: "https://onbibi.com/search?q=abc%20def")
         let searchResultsRouter = Router.searchResults(query: "abc def")
         XCTAssertEqual(searchResultsRouter.url, expectedSearchResultsRouterURL)
         
