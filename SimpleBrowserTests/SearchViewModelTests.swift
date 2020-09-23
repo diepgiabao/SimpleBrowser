@@ -41,7 +41,7 @@ class SearchViewModelTests: XCTestCase {
         
         let searchQueryResultURL = viewModel.searchResultURL(forSearchQuery: "test query")
         XCTAssertNotNil(searchQueryResultURL)
-        XCTAssertEqual(searchQueryResultURL, URL(string: "https://bing.com/search?q=test%20query"))
+        XCTAssertEqual(searchQueryResultURL, URL(string: "https://onbibi.com/search?q=test%20query"))
         
         let searchSuggestionResultURL = viewModel.searchResultURL(forSuggestionAt: IndexPath(row: 7, section: 0))
         XCTAssertNotNil(searchSuggestionResultURL)
