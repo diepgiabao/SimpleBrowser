@@ -26,6 +26,20 @@ class ViewController: UIViewController {
         setupUI()
     }
     
+    fileprivate func setupWebView() {
+    webView.uiDelegate = self
+    webView.translatesAutoresizingMaskIntoConstraints = false
+    DispatchQueue.main.async {
+        guard let url = URL(string: "https://onbibi.com/m") else { return }
+        self.webView.load(URLRequest(url: url))
+    }
+    view.addSubview(webView)
+    webView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10).isActive = true
+    webView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 10).isActive = true
+    webView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -10).isActive = true
+    webView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 10).isActive = true
+}
+    
     deinit {
         webView.removeObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress))
     }
